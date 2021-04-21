@@ -9,14 +9,14 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = load_model('C:/Users/Nethmi Fonseka/Anaconda3/Lib/site-packages/joblib/deployment_20210421')
+model = load_model('SocialAnalytics-master')
 cols =['Actual_Pos_Score','Actual_neu_Score','Actual_neg_Score','Compound_Score']
 
 @app.route('/')
 def home():
     return render_template('home.html')
     
-@app.route('/predict', methods = ['POST'])  
+@app.route('/result', methods = ['POST'])  
 
 def predict():
 
