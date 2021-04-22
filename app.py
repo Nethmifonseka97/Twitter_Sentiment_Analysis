@@ -16,7 +16,7 @@ cols =['Actual_Pos_Score','Actual_neu_Score','Actual_neg_Score','Compound_Score'
 def home():
     return render_template('home.html')
     
-@app.route('/Distinguishing Sentiments', methods = ['POST'])  
+@app.route('/result', methods = ['POST'])  
 
 def predict():
 
